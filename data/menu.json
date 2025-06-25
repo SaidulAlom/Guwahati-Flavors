@@ -1,0 +1,155 @@
+{
+  "categories": [
+    {
+      "id": "thali",
+      "name": "Traditional Thali",
+      "icon": "🍛",
+      "items": [
+        {
+          "id": "assamese-thali",
+          "name": "Assamese Thali",
+          "description": "Complete traditional meal with rice, dal, fish curry, vegetable, pickle, and sweet",
+          "price": 180,
+          "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg",
+          "isVeg": false,
+          "isSpicy": true,
+          "popular": true
+        },
+        {
+          "id": "vegetarian-thali",
+          "name": "Vegetarian Thali", 
+          "description": "Healthy vegetarian platter with seasonal vegetables and dal",
+          "price": 150,
+          "image": "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg",
+          "isVeg": true,
+          "isSpicy": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "name": "Main Dishes",
+      "icon": "🍖",
+      "items": [
+        {
+          "id": "masor-tenga",
+          "name": "Masor Tenga",
+          "description": "Traditional Assamese sour fish curry with tomatoes and lemon",
+          "price": 220,
+          "image": "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg",
+          "isVeg": false,
+          "isSpicy": true,
+          "popular": true
+        },
+        {
+          "id": "duck-curry",
+          "name": "Duck Curry",
+          "description": "Spicy duck curry cooked with traditional Assamese spices",
+          "price": 280,
+          "image": "https://images.pexels.com/photos/2679501/pexels-photo-2679501.jpeg",
+          "isVeg": false,
+          "isSpicy": true,
+          "popular": false
+        },
+        {
+          "id": "aloo-pitika",
+          "name": "Aloo Pitika",
+          "description": "Mashed potatoes with mustard oil, onions, and green chilies",
+          "price": 80,
+          "image": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg",
+          "isVeg": true,
+          "isSpicy": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "id": "snacks",
+      "name": "Snacks & Starters",
+      "icon": "🥟",
+      "items": [
+        {
+          "id": "momos",
+          "name": "Assamese Momos",
+          "description": "Steamed dumplings filled with spiced meat and vegetables",
+          "price": 120,
+          "image": "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg",
+          "isVeg": false,
+          "isSpicy": false,
+          "popular": true
+        },
+        {
+          "id": "pitha",
+          "name": "Traditional Pitha",
+          "description": "Rice cake stuffed with coconut and jaggery",
+          "price": 60,
+          "image": "https://images.pexels.com/photos/5966630/pexels-photo-5966630.jpeg",
+          "isVeg": true,
+          "isSpicy": false,
+          "popular": false
+        },
+        {
+          "id": "fish-fry",
+          "name": "Fish Fry",
+          "description": "Crispy fried fish with traditional spices",
+          "price": 180,
+          "image": "https://images.pexels.com/photos/725991/pexels-photo-725991.jpeg",
+          "isVeg": false,
+          "isSpicy": true,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "id": "beverages",
+      "name": "Beverages",
+      "icon": "🍵",
+      "items": [
+        {
+          "id": "assam-tea",
+          "name": "Assam Tea",
+          "description": "Fresh brewed Assam tea with milk and spices",
+          "price": 30,
+          "image": "https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg",
+          "isVeg": true,
+          "isSpicy": false,
+          "popular": true
+        },
+        {
+          "id": "lemon-tea",
+          "name": "Lemon Tea",
+          "description": "Refreshing tea with fresh lemon and honey",
+          "price": 35,
+          "image": "https://images.pexels.com/photos/1638281/pexels-photo-1638281.jpeg",
+          "isVeg": true,
+          "isSpicy": false,
+          "popular": false
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Priya Sharma",
+      "rating": 5,
+      "comment": "Authentic Assamese flavors! The Masor Tenga was absolutely delicious.",
+      "date": "2024-01-15"
+    },
+    {
+      "id": 2,
+      "name": "Ranjan Das",
+      "rating": 5,
+      "comment": "Best traditional food in Guwahati. Quick delivery and amazing taste!",
+      "date": "2024-01-10"
+    },
+    {
+      "id": 3,
+      "name": "Anita Bora",
+      "rating": 4,
+      "comment": "Great experience! The thali was very filling and authentic.",
+      "date": "2024-01-08"
+    }
+  ]
+}
