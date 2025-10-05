@@ -58,7 +58,8 @@ function Scene() {
 
 export default function Hero3D() {
   return (
-    <div className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 py-8 sm:py-12">
+    <>
+    <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 pt-4 pb-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -167,19 +168,90 @@ export default function Hero3D() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Features Section */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.8 }}
-        className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1, duration: 0.8 }}
+        className="absolute bottom-8 sm:bottom-12 left-0 right-0 z-20"
       >
-        <div className="animate-bounce">
-          <div className="w-5 sm:w-6 h-8 sm:h-10 border-2 border-amber-500 rounded-full flex justify-center">
-            <div className="w-1 h-2 sm:h-3 bg-amber-500 rounded-full mt-2 animate-pulse" />
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 bg-white/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg">
+            <div className="text-center">
+              <div className="text-xl sm:text-2xl mb-1 sm:mb-2">🍛</div>
+              <div className="font-semibold text-gray-900 text-sm sm:text-base">Traditional</div>
+              <div className="text-xs sm:text-sm text-gray-600">Recipes</div>
+            </div>
+            <div className="text-center">
+              <div className="text-xl sm:text-2xl mb-1 sm:mb-2">🌿</div>
+              <div className="font-semibold text-gray-900 text-sm sm:text-base">Fresh</div>
+              <div className="text-xs sm:text-sm text-gray-600">Ingredients</div>
+            </div>
+            <div className="text-center">
+              <div className="text-xl sm:text-2xl mb-1 sm:mb-2">🚚</div>
+              <div className="font-semibold text-gray-900 text-sm sm:text-base">Fast</div>
+              <div className="text-xs sm:text-sm text-gray-600">Delivery</div>
+            </div>
+            <div className="text-center">
+              <div className="text-xl sm:text-2xl mb-1 sm:mb-2">⭐</div>
+              <div className="font-semibold text-gray-900 text-sm sm:text-base">Premium</div>
+              <div className="text-xs sm:text-sm text-gray-600">Quality</div>
+            </div>
           </div>
         </div>
       </motion.div>
+
+
     </div>
+
+    {/* About Section */}
+    <div className="py-12 sm:py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
+              Our <span className="gradient-text">Story</span>
+            </h2>
+            <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+              Founded in the heart of Guwahati, we bring you the most authentic Assamese flavors 
+              that have been cherished for generations. Our chefs use traditional cooking methods 
+              and locally sourced ingredients to create dishes that tell the story of Assam.
+            </p>
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
+              <div className="bg-amber-50 p-3 sm:p-4 rounded-lg">
+                <div className="text-xl sm:text-2xl font-bold text-amber-600">15+</div>
+                <div className="text-xs sm:text-sm text-gray-600">Years Experience</div>
+              </div>
+              <div className="bg-orange-50 p-3 sm:p-4 rounded-lg">
+                <div className="text-xl sm:text-2xl font-bold text-orange-600">50+</div>
+                <div className="text-xs sm:text-sm text-gray-600">Authentic Dishes</div>
+              </div>
+            </div>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="grid grid-cols-2 gap-3 sm:gap-4"
+          >
+            <div className="space-y-3 sm:space-y-4">
+              <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg" alt="Traditional cooking" className="w-full h-32 sm:h-40 object-cover rounded-lg shadow-lg" />
+              <img src="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg" alt="Fresh ingredients" className="w-full h-32 sm:h-40 object-cover rounded-lg shadow-lg" />
+            </div>
+            <div className="space-y-3 sm:space-y-4 mt-4 sm:mt-8">
+              <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg" alt="Assamese thali" className="w-full h-32 sm:h-40 object-cover rounded-lg shadow-lg" />
+              <img src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg" alt="Traditional dishes" className="w-full h-32 sm:h-40 object-cover rounded-lg shadow-lg" />
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </div>
+    </>
   );
 }
