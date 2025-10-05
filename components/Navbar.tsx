@@ -47,22 +47,21 @@ export default function Navbar() {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-amber-600 text-white pt-20 py-2 px-3 sm:px-4 md:px-6">
+      <div className="bg-amber-600 text-white py-2 px-3 sm:px-4 md:px-6">
         <div className="container mx-auto flex flex-col xs:flex-row items-center justify-between text-xs sm:text-sm gap-2 xs:gap-0">
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-6 justify-center xs:justify-start">
             <div className="flex items-center gap-1.5 sm:gap-2">
-              <Phone className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
-              <span className="hidden xs:inline">+91-9876543210</span>
-              <span className="xs:hidden">+91-9876543210</span>
+              <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
+              <span>+91-9876543210</span>
             </div>
             <div className="flex items-center gap-1.5 sm:gap-2">
-              <Clock className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
+              <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
               <span className="hidden sm:inline">10:00 AM - 10:00 PM</span>
               <span className="sm:hidden">10AM-10PM</span>
             </div>
           </div>
           <div className="flex items-center gap-1.5 sm:gap-2">
-            <MapPin className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
+            <MapPin className="w-3 h-3 sm:w-4 sm:h-4" />
             <span className="hidden md:inline">Fancy Bazaar, Guwahati</span>
             <span className="md:hidden">Fancy Bazaar</span>
           </div>
@@ -227,7 +226,7 @@ export default function Navbar() {
       </nav>
 
       {/* Spacer to prevent content from hiding behind fixed navbar */}
-      <div className="h-14 sm:h-16 md:h-18 lg:h-20 xl:h-24" />
+      <div className="h-20 sm:h-24 md:h-26 lg:h-28 xl:h-32" />
     </>
   );
 }

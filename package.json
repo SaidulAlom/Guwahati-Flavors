@@ -1,12 +1,20 @@
 {
-  "name": "guwahati-restaurant",
-  "version": "0.1.0",
+  "name": "guwahati-flavors",
+  "version": "1.0.0",
+  "description": "Authentic Assamese cuisine restaurant website with 3D elements and AI features",
   "private": true,
+  "keywords": ["restaurant", "assamese", "cuisine", "nextjs", "3d", "ai", "food"],
+  "author": "Guwahati Flavors",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "analyze": "ANALYZE=true npm run build",
+    "clean": "rm -rf .next out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

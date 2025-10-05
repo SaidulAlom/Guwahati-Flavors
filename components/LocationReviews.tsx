@@ -158,7 +158,7 @@ export default function LocationReviews() {
                 </div>
 
                 <blockquote className="text-base sm:text-lg lg:text-xl text-gray-700 mb-4 sm:mb-6 italic">
-                  "{reviews[currentReviewIndex].comment}"
+                  &quot;{reviews[currentReviewIndex].comment}&quot;
                 </blockquote>
 
                 <div className="flex items-center gap-3 sm:gap-4">
