@@ -5,6 +5,7 @@ import { OrbitControls, Float, Text3D, Center } from '@react-three/drei';
 import { motion } from 'framer-motion';
 import { Suspense } from 'react';
 import * as THREE from 'three';
+import Image from 'next/image';
 
 function TeaCup() {
   // Adjust scale based on viewport width for responsiveness
@@ -241,12 +242,20 @@ export default function Hero3D() {
             className="grid grid-cols-2 gap-3 sm:gap-4"
           >
             <div className="space-y-3 sm:space-y-4">
-              <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg" alt="Traditional cooking" className="w-full h-32 sm:h-40 object-cover rounded-lg shadow-lg" />
-              <img src="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg" alt="Fresh ingredients" className="w-full h-32 sm:h-40 object-cover rounded-lg shadow-lg" />
+              <div className="relative w-full h-32 sm:h-40">
+                <Image src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg" alt="Traditional cooking" fill className="object-cover rounded-lg shadow-lg" />
+              </div>
+              <div className="relative w-full h-32 sm:h-40">
+                <Image src="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg" alt="Fresh ingredients" fill className="object-cover rounded-lg shadow-lg" />
+              </div>
             </div>
             <div className="space-y-3 sm:space-y-4 mt-4 sm:mt-8">
-              <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg" alt="Assamese thali" className="w-full h-32 sm:h-40 object-cover rounded-lg shadow-lg" />
-              <img src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg" alt="Traditional dishes" className="w-full h-32 sm:h-40 object-cover rounded-lg shadow-lg" />
+              <div className="relative w-full h-32 sm:h-40">
+                <Image src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg" alt="Assamese thali" fill className="object-cover rounded-lg shadow-lg" />
+              </div>
+              <div className="relative w-full h-32 sm:h-40">
+                <Image src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg" alt="Traditional dishes" fill className="object-cover rounded-lg shadow-lg" />
+              </div>
             </div>
           </motion.div>
         </div>

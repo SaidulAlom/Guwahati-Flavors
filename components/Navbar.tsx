@@ -87,7 +87,7 @@ export default function Navbar() {
         {/* Main Navbar */}
         <div className="bg-gray-900/95 backdrop-blur-md shadow-lg transition-all duration-300">
           <div className="w-full px-2">
-            <div className="flex items-center justify-between h-12">
+            <div className="flex items-center justify-between h-16 sm:h-20 relative">
               {/* Logo */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -138,7 +138,7 @@ export default function Navbar() {
               </div>
 
               {/* Desktop Navigation */}
-              <div className="hidden md:flex items-center gap-3 lg:gap-6">
+              <div className="hidden md:flex items-center gap-3 lg:gap-6 absolute left-1/2 transform -translate-x-1/2">
                 {navItems.map((item, index) => (
                   <motion.button
                     key={item.name}
@@ -155,17 +155,18 @@ export default function Navbar() {
                     {item.name}
                   </motion.button>
                 ))}
-                
-                <motion.button
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                  onClick={() => scrollToSection('#order')}
-                  className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-semibold text-sm hover:shadow-lg hover:scale-105 transition-all duration-300"
-                >
-                  Order Now
-                </motion.button>
               </div>
+              
+              {/* Order Button */}
+              <motion.button
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                onClick={() => scrollToSection('#order')}
+                className="hidden md:block bg-gradient-to-r from-amber-500 to-orange-500 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-semibold text-sm hover:shadow-lg hover:scale-105 transition-all duration-300"
+              >
+                Order Now
+              </motion.button>
 
               {/* Mobile Menu Button */}
               <motion.button
@@ -227,7 +228,7 @@ export default function Navbar() {
       </nav>
 
       {/* Spacer */}
-      <div className="h-20 sm:h-24" />
+      <div className="h-24 sm:h-32" />
     </>
   );
 }

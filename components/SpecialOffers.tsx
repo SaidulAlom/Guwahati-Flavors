@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, Gift, Star, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 interface Offer {
   id: string;
@@ -115,10 +116,12 @@ export default function SpecialOffers() {
               <div className="grid md:grid-cols-2 gap-0">
                 {/* Image Section */}
                 <div className="relative h-64 md:h-auto">
-                  <img
+                  <Image
                     src={offers[currentOffer].image}
                     alt={offers[currentOffer].title}
-                    className="w-full h-full object-cover"
+                    fill
+                    priority={currentOffer === 0}
+                    className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
                   
